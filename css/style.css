@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #e5e5e5;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #111111;
+  border-bottom: 1px solid silver;
+  padding: 20px;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  color: silver;
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a {
+  color: #e5e5e5;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: silver;
+}
+
+/* Main Sections */
+section {
+  padding: 80px 40px;
+}
+
+/* Hero */
+#hero-heading {
+  font-size: 48px;
+  color: silver;
+  margin-bottom: 20px;
+}
+
+section p {
+  max-width: 700px;
+  color: #cfcfcf;
+}
+
+/* Skills Cards */
+article {
+  background: #151515;
+  border: 1px solid #2c2c2c;
+  padding: 25px;
+  margin-top: 25px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+article:hover {
+  border-color: silver;
+  transform: translateY(-5px);
+}
+
+article h3 {
+  color: silver;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px;
+  border-top: 1px solid #2c2c2c;
+  color: #999;
+}
+
+/* Accessibility Focus */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 3px solid silver;
+  outline-offset: 4px;
+}
+
+/* Skip Link */
+.skip-link {
+  position: absolute;
+  left: -999px;
+}
+
+.skip-link:focus {
+  left: 20px;
+  top: 20px;
+  background: silver;
+  color: black;
+  padding: 10px;
+  z-index: 1000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #hero-heading {
+    font-size: 36px;
+  }
+
+}
